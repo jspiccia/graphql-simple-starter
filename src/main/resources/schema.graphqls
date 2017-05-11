@@ -1,0 +1,10 @@
+type Query {
+    
+   book(id: String!): Book @doc(d: "Find human by id")
+   findAll: [Book] @doc(d: "all books")
+}
+
+type Book {
+    id: Int!
+    author: String!
+}
