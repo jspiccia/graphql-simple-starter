@@ -6,5 +6,12 @@ type Query {
 
 type Book {
     id: Int!
-    author: String!
+    theAuthor: String!
+    related: [Book] @doc(d: "Get all books related to this one")
+    other: [Book] @doc(d: "Get all books related to this one") @deprecated(reason: "This is a reason")
+    author: Author!
+}
+
+type Author {
+   authorName: String!
 }

@@ -38,7 +38,7 @@ public class GreetingController {
         return SchemaParser.newParser()
             .file("schema.graphqls")
             .resolvers(resolvers)
-            .dictionary(Book.class)
+            .dictionary(Book.class,Author.class)
             .build()
             .makeExecutableSchema();
     }

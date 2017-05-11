@@ -24,5 +24,6 @@ public class Query implements GraphQLRootResolver {
     {
     	return -1;
     }
+    
 
 }

@@ -2,6 +2,7 @@ package jaime.test;
 
 public class Book {
 	private int id;
+	private Author author;
 	
 	public Book(int in)
 	{
@@ -14,6 +15,11 @@ public class Book {
 	public int getId()
 	{
 		return id;
+	}
+	
+	public Author getAuthor()
+	{
+		return new Author();
 	}
 
 }
